@@ -1,0 +1,211 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+main {
+    position: relative;
+    top: 60px;
+    padding: 6rem 1rem 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilos para Ícones */
+.fas {
+    margin-right: 10px;
+    color: #ff6f61;
+}
+
+/* Seção de Serviços */
+#servicos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicos ul li {
+    background-color: #fff;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#servicos ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery img, .gallery .video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover, .gallery .video:hover {
+    transform: scale(1.05);
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Formulário de Agendamento */
+#agendamento form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#agendamento label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#agendamento input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#agendamento input::placeholder {
+    color: #999;
+}
+
+#agendamento button {
+    padding: 0.75rem;
+    border: none;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#agendamento button:hover {
+    background-color: #ff3b2f;
+}
+
+#mensagem {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6f61;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 8rem 1rem 2rem 1rem; /* Ajuste para o header fixo em dispositivos móveis */
+    }
+}

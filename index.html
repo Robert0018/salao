@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Beleza e Massoterapia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1>Salão de Beleza e Massoterapia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Seção de Serviços -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma variedade de serviços de beleza e massoterapia para atender às suas necessidades.</p>
+            <ul>
+                <li><i class="fas fa-cut"></i> Corte de cabelo</li>
+                <li><i class="fas fa-paint-brush"></i> Coloração</li>
+                <li><i class="fas fa-hand-sparkles"></i> Manicure e pedicure</li>
+                <li><i class="fas fa-spa"></i> Massagem relaxante</li>
+                <li><i class="fas fa-hand-holding-heart"></i> Massagem terapêutica</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Galeria -->
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="img1.jpeg" alt="Serviço 1">
+                <img src="img2.png" alt="Serviço 2">
+                <div class="video">
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Agendamento -->
+        <section id="agendamento">
+            <h2>Agendamento</h2>
+            <form id="agendamento-form" action="https://formsubmit.co/robertsilva16099@gmail.com" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                <button type="submit">Agendar</button>
+            </form>
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Salão de Beleza e Massoterapia. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/salaoterapia2024/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
