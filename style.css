@@ -15,8 +15,8 @@ header {
     padding: 1rem 0;
     text-align: center;
     top: 0;
-    z-index: 1000;
-    position: fixed;
+    z-index: 1;
+    
 }
 
 .menu {
@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 main {
-    position: relative;
+   
     top: 60px;
     padding: 6rem 1rem 2rem 1rem;
     max-width: 1200px;
@@ -89,6 +89,11 @@ h2 {
 
 #servicos ul li:hover {
     transform: translateY(-5px);
+}
+
+a{
+    text-decoration: none;
+    color: #333;
 }
 
 /* Galeria */
@@ -198,9 +203,5 @@ footer {
 
     .video {
         max-width: 100%;
-    }
-
-    main {
-        padding: 8rem 1rem 2rem 1rem; /* Ajuste para o header fixo em dispositivos móveis */
     }
 }
